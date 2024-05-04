@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/49ddd94397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="index.html">
+                <h5 class="display-5 fw-bold name">Vishnu NK</h5 class="name">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=""><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Skills
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('htm')">HTML</a></li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('cs')">CSS</a></li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('boot')">Bootstrap</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('jsc')">Javascript</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('anglr')">Angular</a></li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('pyth')">Python</a></li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('djo')">Django</a></li>
+                            <li><a class="dropdown-item" href="#skillcard" onclick="htmlClick('rstapi')">Rest API</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#education">Educational Qualification</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <a href="https://www.linkedin.com/in/vishnu-n-k-6a19a8282/">
+                        <li class="nav-item m-2"><i class="fa-brands fa-linkedin-in ico hov"></i></li>
+                    </a>
+                    <a href="https://github.com/vishnunk02">
+                        <li class="nav-item me-5 m-2"><i class="fa-brands fa-github ico hov"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="about">
+            <div class="col-lg-6 img-div non-div">
+                <img class="profile-image" src="vishnuset.jpg" alt="">
+            </div>
+            <div class="col-lg-6 name-div">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" \>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height:300px;" data-bs-interval="4000">
+                            <div class="intro">
+                                <p class="fw-bold" style="font-size: 200%;">I am</p>
+                                <h1 class="display-1 fw-bold">Vishnu N K</h1>
+                                <p class="" style="font-size: 150%;">"I'm a computer engineering graduate and current
+                                    software development student, eager to grow and contribute in the tech world</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height:300px;" data-bs-interval="8000">
+                            <div class="intro">
+                                <p style="font-size: 150%;" class="mt-5">A tech-savvy individual with a Diploma in
+                                    Computer Engineering seeking employment as a Frontend and Backend developer.
+                                    Passionate about learning and consistently advancing my knowledge and skills.
+                                    Attended multiple seminars and bootcamps on coding and software development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 img-div non-div1">
+                <img class="profile-image" src="vishnuset.jpg" alt="">
+            </div>
+        </div>
+        <div class="card p-3 card-div">
+            <h3 class="display-3 fw-bold text-center">Skills</h3>
+            <hr>
+            <div class="row skill-btn">
+                <button onclick="htmlClick('htm')" class="btn btn-outline-dark i-btn m-2"><i
+                        class="fa-brands fa-html5 fa-2x"></i></button>
+                <button onclick="htmlClick('cs')" class="btn btn-outline-dark i-btn m-2"><i
+                        class="fa-brands fa-css3 fa-2x"></i></button>
+                <button onclick="htmlClick('boot')" class="btn btn-outline-dark i-btn m-2"><i
+                        class="fa-brands fa-bootstrap fa-2x"></i></button>
+                <button onclick="htmlClick('jsc')" class="btn btn-outline-dark i-btn m-2"><i
+                        class="fa-brands fa-js fa-2x"></i></button>
+                <button onclick="htmlClick('anglr')" class="btn btn-outline-dark i-btn m-2"><i
+                        class="fa-brands fa-angular fa-2x"></i></button>
+                <button onclick="htmlClick('pyth')" class="btn btn-outline-dark i-btn m-2"><i
+                        class="fa-brands fa-python fa-2x"></i></button>
+                <button onclick="htmlClick('djo')" class="btn btn-outline-dark i-btn m-2">
+                    <h5 class="django fw-bold mt-1">django</h5>
+                </button>
+                <button onclick="htmlClick('rstapi')" class="btn btn-outline-dark i-btn m-2">
+                    <h6 class="django fw-bold mt-2">Rest API</h6>
+                </button>
+                <button onclick="htmlClick('react')" class="btn btn-outline-dark i-btn m-2">
+                    <i class="fa-brands fa-react fa-2x"></i>
+                </button>
+                <button onclick="htmlClick('mysql')" class="btn btn-outline-dark i-btn m-2">
+                    <i class="fa-solid fa-database fa-2x"></i>
+                </button>
+                <button onclick="htmlClick('mongo')" class="btn btn-outline-dark i-btn m-2">
+                    <h6 class="django fw-bold mt-2">Mongodb</h6>
+                </button>
+
+            </div>
+            <div class="row mt-5" id="skillcard">
+                <div class="col-lg-3 col-md-1"></div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="card mt-5 card-div" id="htm" style="width:fit-content;display:none;">
+                        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">HTML, or HyperText Markup Language, is the essential code for
+                                structuring web documents. Using tags like <code>&lt;html&gt;</code>,
+                                <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>, it organizes content. If
+                                you're familiar with HTML, you likely recognize elements like headings, paragraphs, and
+                                links. Semantic tags such as <code>&lt;article&gt;</code> enhance content clarity. Your
+                                knowledge may also extend to forms with <code>&lt;form&gt;</code> and
+                                <code>&lt;input&gt;</code> for user interaction. HTML serves as the cornerstone for web
+                                development, showcasing your ability to create structured and interactive content
+                                online.
+                            </p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="cs" style="width: 30rem;display:none;">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/241/580/981/css-css3-wallpaper-preview.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Cascading Style Sheets, or CSS, plays a crucial role in web development
+                                by complementing HTML. It allows for the styling and visual presentation of HTML
+                                elements, employing selectors, properties, and values to control attributes such as
+                                colors, fonts, spacing, and layout. With selectors like class and ID, CSS provides a
+                                means to target specific elements for styling, offering a flexible and cascading
+                                approach to applying styles. Responsive design, facilitated by CSS through media queries
+                                and flexible layouts, ensures optimal display across diverse devices and screen sizes.
+                                CSS also supports animations and transitions, adding dynamic and interactive elements to
+                                web pages. Whether applied internally, externally, or inline within HTML, CSS is
+                                instrumental in creating cohesive and visually appealing designs, making it an integral
+                                part of web development.
+                            </p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="boot" style="width: 30rem;display:none;">
+                        <img src="https://e0.pxfuel.com/wallpapers/124/130/desktop-wallpaper-top-bootstrap-themes.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Bootstrap is a widely-used front-end framework that streamlines web
+                                development by providing a comprehensive set of pre-designed and responsive components.
+                                Developed by Twitter, Bootstrap offers a responsive grid system, customizable CSS
+                                styles, and a range of JavaScript components, enabling developers to create visually
+                                appealing and consistent user interfaces across various devices. With its
+                                straightforward documentation and large community support, Bootstrap has become a go-to
+                                choice for web developers seeking efficiency in building responsive and visually
+                                cohesive websites and web applications. Its grid system, along with a collection of
+                                utility classes, simplifies the creation of responsive layouts and ensures a seamless
+                                user experience on different screen sizes.
+                            </p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="jsc" style="width: 30rem;display:none;">
+                        <img src="https://e0.pxfuel.com/wallpapers/316/193/desktop-wallpaper-javascript.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">JavaScript (JS) is a versatile and widely-used programming language
+                                that plays a pivotal role in web development. Initially designed to enhance the
+                                interactivity of web pages, JS has evolved into a powerful and multi-paradigm scripting
+                                language. It is primarily executed on the client side within web browsers, allowing
+                                developers to create dynamic and responsive user interfaces. JavaScript enables the
+                                manipulation of HTML and CSS, facilitating the creation of interactive features, such as
+                                form validation, image sliders, and real-time updates without the need to reload the
+                                entire page. With the advent of Node.js, JavaScript has expanded its reach to
+                                server-side development as well. Its flexibility, coupled with extensive libraries and
+                                frameworks like React, Angular, and Vue.js, has made JavaScript an integral part of
+                                modern web development, empowering developers to build engaging and dynamic web
+                                applications.
+                            </p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="anglr" style="width: 30rem;display:none;">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/737/196/874/angular-software-hd-wallpaper-preview.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Angular is a powerful and widely-used open-source front-end web
+                                application framework developed and maintained by Google. It is written in TypeScript
+                                and allows developers to build dynamic, single-page web applications with a modular and
+                                structured approach. Angular employs a declarative approach to building user interfaces,
+                                providing a comprehensive set of tools and features for creating robust and scalable
+                                applications. Key features of Angular include two-way data binding, dependency
+                                injection, and a modular architecture with components and directives. Angular also comes
+                                with a powerful command-line interface (CLI) that simplifies development tasks such as
+                                scaffolding, testing, and deployment. Its adherence to best practices, strong community
+                                support, and continuous updates make Angular a popular choice for developers aiming to
+                                create sophisticated and maintainable web applications.
+                            </p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="pyth" style="width: 30rem;display:none;">
+                        <img src="https://images.unsplash.com/photo-1649180556628-9ba704115795?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHl0aG9uJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Python is a versatile and dynamically typed programming language known
+                                for its simplicity and readability. Created by Guido van Rossum and first released in
+                                1991, Python has grown to become one of the most popular and widely-used programming
+                                languages. Its design philosophy emphasizes code readability and a clean syntax, making
+                                it an ideal choice for beginners as well as experienced developers. Python supports
+                                multiple programming paradigms, including procedural, object-oriented, and functional
+                                programming. It has a large and active community that contributes to a vast ecosystem of
+                                libraries and frameworks, making Python suitable for a wide range of applications such
+                                as web development, data science, artificial intelligence, automation, and more.
+                                Python's ease of learning, extensive documentation, and versatility contribute to its
+                                widespread adoption and continued relevance in the rapidly evolving field of software
+                                development.
+                            </p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="djo" style="width: 30rem;display:none;">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/816/321/desktop-wallpaper-django-s-python.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Django is a powerful and open-source web framework written in Python,
+                                designed to facilitate the rapid development of web applications. Since its inception in
+                                2005, Django has gained widespread popularity for its emphasis on simplicity,
+                                efficiency, and scalability. Guided by the "don't repeat yourself" (DRY) principle and
+                                utilizing the Model-View-Controller (MVC) architectural pattern, Django provides
+                                developers with a comprehensive set of tools, including an Object-Relational Mapping
+                                (ORM) system, templating engine, and an integrated administrative interface. Its
+                                "batteries-included" philosophy streamlines common development tasks, allowing for
+                                faster and more maintainable code. Django's active community, extensive documentation,
+                                and commitment to security make it a preferred choice for building a variety of web
+                                applications, ranging from content management systems to data-driven websites.</p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="rstapi" style="width: 30rem;display:none;">
+                        <img src="https://dfdmyvckxgqn5.cloudfront.net/_app/immutable/assets/building-elegant-rest-apis.d8f4cbc6.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">A Representational State Transfer (REST) API, or simply REST API, is a
+                                set of conventions and principles for designing web services that adhere to the
+                                principles of REST architecture. REST is an architectural style that uses standard HTTP
+                                methods, such as GET, POST, PUT, and DELETE, to perform operations on resources
+                                identified by Uniform Resource Identifiers (URIs). RESTful APIs are stateless, meaning
+                                each request from a client contains all the information needed to understand and process
+                                the request, allowing for scalability and simplicity. They typically communicate using
+                                JSON or XML for data interchange. REST APIs are widely used for building web services
+                                that provide access to resources and functionalities, allowing different software
+                                applications to communicate with each other over the internet. They are employed in a
+                                variety of contexts, including web and mobile application development, as well as
+                                integration between different systems and services.</p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="react" style="width: 30rem;display:none;">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">React is a JavaScript library widely utilized for building user interfaces, particularly for web applications. It follows a component-based architecture, where complex UIs are broken down into manageable, reusable components. React efficiently updates and renders components when data changes, thanks to its virtual DOM mechanism, enhancing performance and user experience. With its declarative syntax, developers can describe how the UI should look based on the application's state, simplifying the development process. React's ecosystem offers a range of tools and libraries, such as Redux for state management and React Router for navigation, enabling developers to create robust and interactive applications. Its popularity stems from its flexibility, scalability, and strong community support, making it a preferred choice for frontend development across various industries and domains.</p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="mysql" style="width: 30rem;display:none;">
+                        <img src="https://www.zend.com/sites/default/files/image/2020-04/image-blog-mysql-php.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">MySQL is an open-source relational database management system (RDBMS) renowned for its reliability, performance, and ease of use. It adheres to the traditional relational database model, organizing data into tables with rows and columns, and supporting SQL for querying and manipulating data. MySQL is widely employed in various applications, from small-scale websites to large-scale enterprise systems, due to its scalability and robustness. It offers features such as transactions, indexing, and replication, ensuring data integrity and high availability. MySQL's compatibility with multiple platforms and programming languages, along with its extensive documentation and community support, makes it a preferred choice for developers and organizations seeking a reliable database solution for their projects.</p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                    <div class="card mt-5 card-div" id="mongo" style="width: 30rem;display:none;">
+                        <img src="https://wallpapercave.com/wp/wp8725088.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">MongoDB is a popular NoSQL database system designed for flexibility, scalability, and high performance. It diverges from traditional relational databases by employing a document-oriented data model, storing data in flexible JSON-like documents rather than rigid tables with rows and columns. This schema-less approach allows for dynamic and agile development, as the structure of the data can evolve over time without requiring predefined schemas. MongoDB's distributed architecture enables horizontal scaling across multiple servers, making it suitable for handling large volumes of data and supporting high-traffic applications. It offers powerful querying capabilities, including support for complex aggregations and geospatial queries. MongoDB's robust features, including replication, sharding, and built-in failover mechanisms, ensure data durability and availability. Its versatility and scalability make it a preferred choice for modern web and mobile applications, particularly those dealing with large and diverse datasets.</p>
+                            <button class="btn btn-outline-dark" onclick="closeDiv()">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-1"></div>
+            </div>
+        </div>
+        <h3 class="display-3 fw-bold text-center">Projects</h3>
+        <hr>
+        <div class="row" style="justify-content: center;" id="projects">
+            <div class="card mt-5 col-lg-5 card-div" style="width: 30rem;">
+                <img src="https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Todo</h5>
+                    <h5 class="card-title">Todo App</h5>
+                    <div class="project-about">
+                        <p class="card-text">The Todo App is a simple task management project, allowing users to add, edit,
+                            and delete tasks by priority or due date. With a focus on simplicity, the app offers efficient
+                            features like task completion tracking and optional reminders to help users stay organized and
+                            boost productivity.</p>
+                    </div>
+                    <a href="https://github.com/vishnunk02/todoapp" class="project-btn btn btn-outline-dark">
+                        See Project In Github
+                    </a>
+                </div>
+            </div>
+            <div class="card mt-5 col-lg-5 card-div" style="width: 30rem;">
+                <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">CartBliss</h5>
+                    <h5 class="card-title">E-Commerce Project</h5>
+                    <div class="project-about">
+                        <p class="card-text">CartBliss is a compact e-commerce project in Django, focused on delivering a
+                            straightforward online shopping experience. It features user-friendly navigation, secure payment
+                            options, and efficient order management, making it an ideal solution for small-scale online
+                            businesses</p>
+                    </div>
+                    <a href="https://github.com/vishnunk02/cartbliss" class="project-btn btn btn-outline-dark">
+                        See Project In Github
+                    </a>
+                </div>
+            </div>
+            <div class="card mt-5 col-lg-5 card-div" style="width: 30rem;">
+                <img src="https://images.unsplash.com/photo-1502740479091-635887520276?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Swiftcare Hospital</h5>
+                    <h5 class="card-title">Hospital Management App</h5>
+                    <div class="project-about">
+                        <p class="card-text">SwiftCare Clinic optimizes hospital operations with streamlined patient management, appointment scheduling, and billing features. Designed for efficiency and security, it enhances communication among healthcare professionals, improving patient care and administrative processes.</p>
+                    </div>
+                    <a href="https://github.com/vishnunk02/SwiftcareHospital" class="project-btn btn btn-outline-dark">
+                        See Project In Github
+                    </a>
+                </div>
+            </div>
+            <div class="card mt-5 col-lg-5 card-div" style="width: 30rem;">
+                <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Class-App</h5>
+                    <h5 class="card-title">Online Classroom App</h5>
+                    <div class="project-about"><p class="card-text">Class App revolutionizes traditional classrooms into dynamic digital learning environments, streamlining online management for teachers and students with easy creation, enrollment, assignment sharing, and project submission through its user-friendly interface and robust functionality.</p></div>
+                    <a href="https://github.com/vishnunk02/virtualclassroom" class="project-btn btn btn-outline-dark">
+                        See Project In Github
+                    </a>
+                </div>
+            </div>
+            <div class="card mt-5 col-lg-5 card-div" style="width: 30rem;">
+                <img src="https://c0.wallpaperflare.com/preview/447/815/724/app-application-business-cellphone.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Musicia</h5>
+                    <h5 class="card-title">Music Streaming App</h5>
+                    <div class="project-about">
+                        <p class="card-text">Musica revolutionizes music discovery and streaming with its vast library and personalized experience. Users effortlessly create playlists, explore recommendations, and stay updated on new releases, all through an intuitive interface. Musica redefines music streaming, connecting enthusiasts worldwide to their favorite tunes anytime, anywhere.</p>
+                    </div>
+                    <a href="https://github.com/vishnunk02/music-streaming" class="project-btn btn btn-outline-dark">
+                        See Project In Github
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h5 class="display-5 fw-bold text-center" id="education">Educational Qualification</h5>
+        <hr>
+        <div class="row" style="justify-content: center;">
+            <div class="card edu-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">10th SSLC</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">2017-2018</h6>
+                    <a href="https://schools.org.in/kozhikode/32041501417/g-h-s-s-nayarkuzhi.html"
+                        class="card-text">Government Higher Secondary School,Nayarkuzhi</a>
+                </div>
+            </div>
+            <div class="card edu-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">12th NCERT</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">2018-2020</h6>
+                    <a href="https://schools.org.in/kozhikode/32041501305/g-h-s-s-peringalam.html"
+                        class="card-text">Government Higher Secondary School,Peringolam</a>
+                </div>
+            </div>
+            <div class="card edu-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Diploma in Computer Engineering</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">2020-2023</h6>
+                    <a href="https://gptcmeppadi.ac.in/" class="card-text">Government Polytechnic College,Meppadi</a>
+                </div>
+            </div>
+            <div class="card edu-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Python Django Fullstack Development</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">2023-2024</h6>
+                    <a href="https://www.luminartechnolab.com/" class="card-text">Luminar Technolab <br>Kozhikkode</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5 mt-5 mb-0">
+        <div class="container">
+            <p class="m-0 text-center text-dark">Copyright &copy; vishnunk02</p>
+        </div>
+    </footer>
+</body>
+
+</html>

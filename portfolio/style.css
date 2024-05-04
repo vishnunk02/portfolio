@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #eeeff1;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #505457;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.name-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-image {
+    width: 80%;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.212);
+}
+
+.name {
+    font-size: 150%;
+}
+
+.card-div {
+    background: transparent;
+    border: none;
+}
+
+.non-div {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .non-div {
+        display: contents;
+    }
+
+    .non-div1 {
+        display: none;
+    }
+
+    .img-div {
+        height: fit-content;
+    }
+
+    .name-div {
+        height: fit-content;
+    }
+
+    .profile-image {
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+div,
+input,
+button,
+li,
+a,
+ul,
+i {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ico {
+    font-size: 150%;
+
+}
+
+.hov {
+    transition: transform 0.3s;
+}
+
+.hov:hover {
+    transform: scale(1.1);
+}
+
+.skill-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.btn-div {
+    display: flex;
+    align-items: center;
+
+}
+
+.i-btn {
+    width: 100px;
+    height: 50px;
+}
+
+.django {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-btn {
+    transition: transform 0.1s;
+}
+
+.project-btn:hover {
+    transform: scale(1.11);
+}
+
+.custom-table {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.custom-table th,
+.custom-table td {
+    border: none !important;
+}
+.edu-card{
+    height: 170px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+.edu-card:hover{
+    transform: scale(1.1);
+}
+
+.project-about{
+    height: 200px;
+}
